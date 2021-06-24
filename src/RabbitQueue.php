@@ -38,7 +38,7 @@ class RabbitQueue
     /**
      * 推送任务至队列
      *
-     * @param  \app\common\library\Job $job
+     * @param  \Inna\RabbitQueue\Job $job
      * @return void
      */
     public function push(Job $job)
@@ -133,7 +133,7 @@ class RabbitQueue
     /**
      * 输出任务消息
      *
-     * @param  \app\common\library\Job $job
+     * @param  \Inna\RabbitQueue\Job $job
      * @param  string $message
      * @return void
      */
@@ -163,7 +163,7 @@ class RabbitQueue
     /**
      * 处理失败任务
      *
-     * @param \app\common\library\Job $job
+     * @param \Inna\RabbitQueue\Job $job
      * @param  \Throwable $e
      * @return void
      */
@@ -199,7 +199,7 @@ class RabbitQueue
     /**
      * 注册超时进程alarm信号
      *
-     * @param  \app\common\library\Job $job
+     * @param  \Inna\RabbitQueue\Job $job
      * @param  \PhpAmqpLib\Message\AMQPMessage $message
      * @return void
      */
