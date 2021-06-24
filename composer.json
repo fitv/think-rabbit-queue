@@ -1,0 +1,29 @@
+{
+    "name": "inna/think-rabbit-queue",
+    "description": "RabbitMQ Queue for ThinkPHP.",
+    "keywords": [
+        "RabbitMQ",
+        "queue",
+        "thinkphp"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mvmx/think-rabbit-queue/issues",
+        "source": "https://github.com/mvmx/think-rabbit-queue"
+    },
+    "authors": [
+        {
+            "name": "mamx",
+            "email": "mx.ma@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "php-amqplib/php-amqplib": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inna\\RabbitQueue\\": "src"
+        }
+    }
+}
